@@ -16,7 +16,7 @@
 		DA405E0225334845001541D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA405E0025334845001541D0 /* LaunchScreen.storyboard */; };
 		DA405E0D25334845001541D0 /* NoStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E0C25334845001541D0 /* NoStoryBoardTests.swift */; };
 		DA405E1825334845001541D0 /* NoStoryBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E1725334845001541D0 /* NoStoryBoardUITests.swift */; };
-		DA405E3125334B0C001541D0 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E3025334B0C001541D0 /* Main.swift */; };
+		DA405E3125334B0C001541D0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E3025334B0C001541D0 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		DA405E1325334845001541D0 /* NoStoryBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoStoryBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA405E1725334845001541D0 /* NoStoryBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryBoardUITests.swift; sourceTree = "<group>"; };
 		DA405E1925334845001541D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA405E3025334B0C001541D0 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		DA405E3025334B0C001541D0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EFA685131419B4B39AC1203D /* Pods-NoStoryBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoStoryBoard.debug.xcconfig"; path = "Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +149,7 @@
 		DA405E2E25334AA7001541D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA405E3025334B0C001541D0 /* Main.swift */,
+				DA405E3025334B0C001541D0 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 			files = (
 				DA405DFA25334843001541D0 /* MainController.swift in Sources */,
 				DA405DF625334843001541D0 /* AppDelegate.swift in Sources */,
-				DA405E3125334B0C001541D0 /* Main.swift in Sources */,
+				DA405E3125334B0C001541D0 /* MainView.swift in Sources */,
 				DA405DF825334843001541D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
