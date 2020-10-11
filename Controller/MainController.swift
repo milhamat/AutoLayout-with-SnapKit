@@ -18,6 +18,8 @@ class MainController: UIViewController {
         self.mainView = MainView(frame: self.view.frame)
         self.view = self.mainView
         
+        self.title = "Menu"
+        
     }
 
 
