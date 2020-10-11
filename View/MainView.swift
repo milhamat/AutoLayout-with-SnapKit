@@ -36,9 +36,9 @@ class MainView: UIView {
         
         self.foodImage.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.safeAreaLayoutGuide)
-            make.centerY.equalTo(self.safeAreaLayoutGuide)
-            make.height.equalTo(100)
-            make.width.equalTo(100)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(20)
+            make.height.equalTo(280)
+            make.width.equalTo(280)
         }
     }
 }
