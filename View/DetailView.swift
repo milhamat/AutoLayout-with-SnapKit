@@ -10,11 +10,18 @@ import SnapKit
 
 class DetailView: UIView {
     
+    let detailButton: UIButton = {
+        let button = UIButton(type: UIButton.ButtonType.system)
+        button.setTitle("Detail", for: .normal)
+        button.backgroundColor = .white
+        button.tintColor = .black
+        return button
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupView()
+        self.setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -23,5 +30,14 @@ class DetailView: UIView {
     
     private func setupView() {
         self.backgroundColor = .white
+        
+        self.addSubview(detailButton)
+        
+        self.detailButton.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.safeAreaLayoutGuide)
+            make.centerY.equalTo(self.safeAreaLayoutGuide)
+            make.height.equalTo(50)
+            make.width.equalTo(120)
+        }
     }
 }

@@ -19,12 +19,12 @@ class DetailController: UIViewController {
         
         self.title = "Detail Order"
         
-        
+        self.detailView.detailButton.addTarget(self, action: #selector(goToTableView), for: .touchUpInside)
 
        
     }
     
-
-    
-
+    @objc private func goToTableView(){
+        self.navigationController?.pushViewController(TableViewController(), animated: true)
+    }
 }
