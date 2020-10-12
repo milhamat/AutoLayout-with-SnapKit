@@ -17,6 +17,10 @@
 		DA405E0D25334845001541D0 /* NoStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E0C25334845001541D0 /* NoStoryBoardTests.swift */; };
 		DA405E1825334845001541D0 /* NoStoryBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E1725334845001541D0 /* NoStoryBoardUITests.swift */; };
 		DA405E3125334B0C001541D0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E3025334B0C001541D0 /* MainView.swift */; };
+		DA405E6525343B60001541D0 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E6425343B60001541D0 /* TableView.swift */; };
+		DA405E6A25343BAB001541D0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E6925343BAB001541D0 /* TableViewController.swift */; };
+		DA405E6F253456F7001541D0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E6E253456F7001541D0 /* DetailView.swift */; };
+		DA405E7425345725001541D0 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA405E7325345725001541D0 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		DA405E1725334845001541D0 /* NoStoryBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryBoardUITests.swift; sourceTree = "<group>"; };
 		DA405E1925334845001541D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA405E3025334B0C001541D0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA405E6425343B60001541D0 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		DA405E6925343BAB001541D0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DA405E6E253456F7001541D0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DA405E7325345725001541D0 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		EFA685131419B4B39AC1203D /* Pods-NoStoryBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoStoryBoard.debug.xcconfig"; path = "Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				DA405E3025334B0C001541D0 /* MainView.swift */,
+				DA405E6E253456F7001541D0 /* DetailView.swift */,
+				DA405E6425343B60001541D0 /* TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				DA405DF925334843001541D0 /* MainController.swift */,
+				DA405E7325345725001541D0 /* DetailController.swift */,
+				DA405E6925343BAB001541D0 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,7 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA405E7425345725001541D0 /* DetailController.swift in Sources */,
 				DA405DFA25334843001541D0 /* MainController.swift in Sources */,
+				DA405E6A25343BAB001541D0 /* TableViewController.swift in Sources */,
+				DA405E6525343B60001541D0 /* TableView.swift in Sources */,
+				DA405E6F253456F7001541D0 /* DetailView.swift in Sources */,
 				DA405DF625334843001541D0 /* AppDelegate.swift in Sources */,
 				DA405E3125334B0C001541D0 /* MainView.swift in Sources */,
 				DA405DF825334843001541D0 /* SceneDelegate.swift in Sources */,

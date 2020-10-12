@@ -26,7 +26,7 @@ class MainView: UIView {
     
     let foodDescrp: UILabel = {
         let label = UILabel()
-        label.text = "Sate Klatak sate niqmat tanpa kulit full daging harga saingan pokoknya enak dah"
+        label.text = "Sate Klatak sate niqmat menarique lejat tanpa kulit full daging dah, harga saingan sama bakul sebelah pokoknya enak dah ngga rugi pokoknya coba dulu dah, enak sumpah enak"
         label.font = UIFont.systemFont(ofSize: 12, weight: .light)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -36,7 +36,7 @@ class MainView: UIView {
     let tombolPesan: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setTitle("Pesan", for: .normal)
-        button.backgroundColor = .gray
+        button.backgroundColor = .lightGray
         button.tintColor = .white
         button.layer.cornerRadius = 10
         return button
@@ -74,8 +74,8 @@ class MainView: UIView {
         
         self.foodDescrp.snp.makeConstraints { (make) in
             make.top.equalTo(self.foodName.snp.bottom).offset(8)
-            make.left.equalTo(self.safeAreaLayoutGuide).offset(20)
-            make.right.equalTo(self.safeAreaLayoutGuide).offset(-20)
+            make.left.equalTo(self.safeAreaLayoutGuide).offset(60)
+            make.right.equalTo(self.safeAreaLayoutGuide).offset(-60)
         }
         
         self.tombolPesan.snp.makeConstraints { (make) in

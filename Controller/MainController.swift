@@ -20,6 +20,15 @@ class MainController: UIViewController {
         
         self.title = "Menu"
         
+        self.navigationController?.navigationBar.backgroundColor = .darkGray
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        self.mainView.tombolPesan.addTarget(self, action: #selector(goToDetail), for: .touchUpInside)
+    }
+    
+    @objc private func goToDetail(){
+        self.navigationController?.pushViewController(DetailController(), animated: true)
     }
 
 
