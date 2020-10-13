@@ -7,30 +7,32 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UIViewController {
+    
+    
 
-//    let listMenu = [ "Sate Klatak"," Sate Kendal"
-//    ]
     private var foodTableView: FoodTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.foodTableView = FoodTableView(frame: self.view.frame)
         self.view = self.foodTableView
+        
+        self.foodTableView.tableView.delegate = self
+        self.foodTableView.tableView.dataSource = self
     }
 
-    // MARK: - Table view data source
+}
 
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 2
-////        return listMenu.count
-//    }
+extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.textLabel?.text = "Sate Klatak"
-//        return cell
-//    }
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+        
+    }
 }

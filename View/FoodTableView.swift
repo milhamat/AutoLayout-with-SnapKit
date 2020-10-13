@@ -12,23 +12,21 @@ class FoodTableView: UIView {
     
 //    let tableView = UITableView()
     let tableView: UITableView = {
-        let table = UITableView()
-        let tableData: UITableViewController = TableViewController()
-        table.dataSource = tableData
-        table.delegate = tableData
-        return table
+        let foodTable = UITableView()
+        foodTable.register(CostomTableViewCell.self, forCellReuseIdentifier: "cell")
+        return foodTable
     }()
     
     let border: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .lightGray
         return view
     }()
     
     let tombol: UIButton = {
         let button = UIButton()
         button.setTitle("test", for: .normal )
-        button.backgroundColor = .lightGray
+        button.backgroundColor = .gray
         button.tintColor = .white
         button.layer.cornerRadius = 10
         return button
@@ -67,7 +65,9 @@ class FoodTableView: UIView {
         }
         
         self.tombol.snp.makeConstraints { (make) in
+            make.centerY.equalTo(self.border)
             make.centerX.equalTo(self.border)
+            make.width.equalTo(100)
         }
     }
 }
