@@ -13,7 +13,7 @@ class FoodTableView: UIView {
 //    let tableView = UITableView()
     let tableView: UITableView = {
         let foodTable = UITableView()
-        foodTable.register(CostomTableViewCell.self, forCellReuseIdentifier: "cell")
+        foodTable.register(CostumTableViewCell.self, forCellReuseIdentifier: "cell")
         return foodTable
     }()
     

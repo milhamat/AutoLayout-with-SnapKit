@@ -20,11 +20,16 @@ class DetailController: UIViewController {
         self.title = "Detail Order"
         
         self.detailView.detailButton.addTarget(self, action: #selector(goToTableView), for: .touchUpInside)
+        self.detailView.changeButton.addTarget(self, action: #selector(changeUIView), for: .touchUpInside)
 
        
     }
     
+    @objc private func changeUIView(){
+        detailView.viewTwo.isHidden = true
+    }
+    
     @objc private func goToTableView(){
-        self.navigationController?.pushViewController(TableViewController(), animated: true)
+        self.navigationController?.pushViewController(TableController(), animated: true)
     }
 }

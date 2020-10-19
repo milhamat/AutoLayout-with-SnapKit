@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CostomTableViewCell: UITableViewCell {
+class CostumTableViewCell: UITableViewCell {
     
     let foodImageView: UIImageView = {
         let imageView = UIImageView()
@@ -19,14 +19,12 @@ class CostomTableViewCell: UITableViewCell {
     
     let foodNameLabel: UILabel = {
         let nameLabel = UILabel()
-        nameLabel.text = "Sate Kendal"
         nameLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         return nameLabel
     }()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
