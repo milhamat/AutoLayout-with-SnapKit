@@ -11,7 +11,7 @@ class TableController: UIViewController {
     
     private var foodTableView: FoodTableView!
     
-    let list = ["Sate Klatak", "Sate Kendal"]
+    let list = ["Sate Klatak", "Sate Kendal","Sate Madiun"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class TableController: UIViewController {
 extension TableController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
